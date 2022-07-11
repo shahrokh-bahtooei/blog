@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Linear Algebra by Prof. Gilbert Strang—Notes from a Programmer | Shahrokh Bahtooei’s Blog</title>
+<title>Create my chosen array | Shahrokh Bahtooei’s Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Linear Algebra by Prof. Gilbert Strang—Notes from a Programmer" />
+<meta property="og:title" content="Create my chosen array" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A documentation for some of my repos." />
 <meta property="og:description" content="A documentation for some of my repos." />
@@ -16,9 +16,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-06-10T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Linear Algebra by Prof. Gilbert Strang—Notes from a Programmer" />
+<meta property="twitter:title" content="Create my chosen array" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-10T00:00:00-05:00","datePublished":"2022-06-10T00:00:00-05:00","description":"A documentation for some of my repos.","headline":"Linear Algebra by Prof. Gilbert Strang—Notes from a Programmer","mainEntityOfPage":{"@type":"WebPage","@id":"https://shahrokh-bahtooei.github.io/blog/2022/06/10/LinearAlgebra_GilbertStrang.html"},"url":"https://shahrokh-bahtooei.github.io/blog/2022/06/10/LinearAlgebra_GilbertStrang.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-10T00:00:00-05:00","datePublished":"2022-06-10T00:00:00-05:00","description":"A documentation for some of my repos.","headline":"Create my chosen array","mainEntityOfPage":{"@type":"WebPage","@id":"https://shahrokh-bahtooei.github.io/blog/2022/06/10/LinearAlgebra_GilbertStrang.html"},"url":"https://shahrokh-bahtooei.github.io/blog/2022/06/10/LinearAlgebra_GilbertStrang.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://shahrokh-bahtooei.github.io/blog/feed.xml" title="Shahrokh Bahtooei's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -89,7 +89,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Linear Algebra by Prof. Gilbert Strang—Notes from a Programmer</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-10T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Create my chosen array</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-10T00:00:00-05:00" itemprop="datePublished">
         Jun 10, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -143,6 +143,13 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Linear Algebra by Prof. Gilbert Strang—Notes from a Programmer</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>This notebook exhibits the concepts taught through this course using <code>numpy</code>, <code>scipy</code>, and <code>matplotlib</code>:</p>
 <ul>
 <li>Gilbert Strang. 18.06 Linear Algebra. Spring 2010. Massachusetts Institute of Technology: MIT OpenCourseWare, <a href="https://ocw.mit.edu">https://ocw.mit.edu</a>. License: Creative Commons BY-NC-SA. <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/#">Direct Link</a></li>
@@ -153,148 +160,149 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Contents">Contents<a class="anchor-link" href="#Contents"> </a></h2>
+<p>Contents</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li><a href="#&lt;Create-my-chosen-array&gt;"><strong>Create my chosen array</strong></a></li>
-<li><a href="#&lt;Basic-operations&gt;"><strong>Basic operations</strong></a><ul>
-<li><a href="#&lt;Transpose&gt;">Transpose</a><ul>
-<li><a href="#&lt;Matrix-(2D-array">Matrix (2D array)</a>&gt;)</li>
-<li><a href="#&lt;Vector-(1D-array">Vector (1D array)</a>&gt;)</li>
-<li><a href="#&lt;Vector-(2D-array">Vector (2D array)</a>&gt;)</li>
+<li><a href="#Create-my-chosen-array"><strong>Create my chosen array</strong></a></li>
+<li><a href="#Basic-operations"><strong>Basic operations</strong></a><ul>
+<li><a href="#Transpose">Transpose</a><ul>
+<li><a href="#Matrix-(2D-array)">Matrix (2D array)</a></li>
+<li><a href="#Vector-(1D-array)">Vector (1D array)</a></li>
+<li><a href="#Vector-(2D-array)">Vector (2D array)</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Inverse&gt;">Inverse</a></li>
+<li><a href="#Inverse">Inverse</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Decompositions&gt;"><strong>Decompositions</strong></a><ul>
-<li><a href="#&lt;LU&gt;">LU</a></li>
-<li><a href="#&lt;QR&gt;">QR</a></li>
-<li><a href="#&lt;Diagonalization-(Eigendecomposition">Diagonalization (Eigendecomposition)</a>&gt;)</li>
+<li><a href="#Decompositions"><strong>Decompositions</strong></a><ul>
+<li><a href="#LU">LU</a></li>
+<li><a href="#QR">QR</a></li>
+<li><a href="#Diagonalization-(Eigendecomposition)">Diagonalization (Eigendecomposition)</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Subspaces&gt;"><strong>Subspaces</strong></a><ul>
-<li><a href="#&lt;Column-Space-C(A">Column Space C(A)</a>&gt;)<ul>
-<li><a href="#&lt;Manually&gt;">Manually</a><ul>
-<li><a href="#&lt;QR&gt;">QR</a><ul>
-<li><a href="#&lt;Orthonormal-basis&gt;">Orthonormal basis</a></li>
-<li><a href="#&lt;Independent-columns&gt;">Independent columns</a></li>
+<li><a href="#Subspaces"><strong>Subspaces</strong></a><ul>
+<li><a href="#Column-Space-C(A)">Column Space C(A)</a><ul>
+<li><a href="#Manually">Manually</a><ul>
+<li><a href="#QR">QR</a><ul>
+<li><a href="#Orthonormal-basis">Orthonormal basis</a></li>
+<li><a href="#Independent-columns">Independent columns</a></li>
 </ul>
 </li>
-<li><a href="#&lt;LU-(Independent-columns">LU (Independent columns)</a>&gt;)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#&lt;Null-Space-N(A">Null Space N(A)</a>&gt;)</li>
-<li><a href="#&lt;Row-Space-C(At">Row Space C(At)</a>&gt;)</li>
-<li><a href="#&lt;Left-Null-Space-N(At">Left Null Space N(At)</a>&gt;)</li>
-</ul>
-</li>
-<li><a href="#&lt;Rank-one-matrix&gt;"><strong>Rank-one matrix</strong></a></li>
-<li><a href="#&lt;Least-Squares&gt;"><strong>Least Squares</strong></a><ul>
-<li><a href="#&lt;Manually&gt;">Manually</a></li>
-<li><a href="#&lt;Fitting-a-line/parabola&gt;">Fitting a line/parabola</a></li>
-</ul>
-</li>
-<li><a href="#&lt;Properties-of-the-determinant&gt;"><strong>Properties of the determinant</strong></a><ul>
-<li><a href="#&lt;$|AB|-=-|A||B|$&gt;">$|AB| = |A||B|$</a></li>
-<li><a href="#&lt;$|A^{-1}|-=-\frac{1}{|A|}$&gt;">$|A^{-1}| = \frac{1}{|A|}$</a></li>
-<li><a href="#&lt;$|A^2|=|A|^2$&gt;">$|A^2|=|A|^2$</a></li>
-<li><a href="#&lt;$|2A|=2^n-|A|$&gt;">$|2A|=2^n |A|$</a></li>
-<li><a href="#&lt;$|A^T|=|A|$&gt;">$|A^T|=|A|$</a></li>
-<li><a href="#&lt;$|U|=|A|$&gt;">$|U|=|A|$</a></li>
-<li><a href="#&lt;$|Q|=1$&gt;">$|Q|=1$</a></li>
-</ul>
-</li>
-<li><a href="#&lt;Eigenvalues-and-eigenvectors&gt;"><strong>Eigenvalues and eigenvectors</strong></a><ul>
-<li><a href="#&lt;Product-of-eigenvalues&gt;">Product of eigenvalues</a></li>
-<li><a href="#&lt;Sum-of-eigenvalues&gt;">Sum of eigenvalues</a></li>
-<li><a href="#&lt;Adding-to-the-diagonal-adds-to-lambdas&gt;">Adding to the diagonal adds to lambdas</a></li>
-<li><a href="#&lt;Attributes-of-a-diagonal-matrix&gt;">Attributes of a diagonal matrix</a></li>
-<li><a href="#&lt;Rotation-matrix-often-has-complex-lambdas&gt;">Rotation matrix often has complex lambdas</a></li>
-</ul>
-</li>
-<li><a href="#&lt;Diagonalizability&gt;"><strong>Diagonalizability</strong></a><ul>
-<li><a href="#&lt;Algebraic-&amp;-Geometric-Multiplicity&gt;">Algebraic &amp; Geometric Multiplicity</a></li>
-<li><a href="#&lt;Defective-matrix&gt;">Defective matrix</a></li>
-<li><a href="#&lt;Diagonalizable-matrix&gt;">Diagonalizable matrix</a><ul>
-<li><a href="#&lt;Normal&gt;">Normal</a><ul>
-<li><a href="#&lt;Hermitian&gt;">Hermitian</a></li>
-<li><a href="#&lt;Unitary&gt;">Unitary</a></li>
+<li><a href="#LU-(Independent-columns)">LU (Independent columns)</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li><a href="#Null-Space-N(A)">Null Space N(A)</a></li>
+<li><a href="#Row-Space-C(At)">Row Space C(At)</a></li>
+<li><a href="#Left-Null-Space-N(At)">Left Null Space N(At)</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Matrix-Power-$A^{k}$&gt;"><strong>Matrix Power $A^{k}$</strong></a><ul>
-<li><a href="#&lt;A-diagonal-matrix&gt;">A diagonal matrix</a></li>
-<li><a href="#&lt;Any-matrix&gt;">Any matrix</a></li>
+<li><a href="#Rank-one-matrix"><strong>Rank-one matrix</strong></a></li>
+<li><a href="#Least-Squares"><strong>Least Squares</strong></a><ul>
+<li><a href="#Manually">Manually</a></li>
+<li><a href="#Fitting-a-line/parabola">Fitting a line/parabola</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Matrix-Exponential-$e^{At}$&gt;"><strong>Matrix Exponential $e^{At}$</strong></a><ul>
-<li><a href="#&lt;A-diagonal-matrix&gt;">A diagonal matrix</a></li>
-<li><a href="#&lt;Any-matrix&gt;">Any matrix</a></li>
+<li><a href="#Properties-of-the-determinant"><strong>Properties of the determinant</strong></a><ul>
+<li><a href="#$|AB|-=-|A||B|$">$|AB| = |A||B|$</a></li>
+<li><a href="#$|A^{-1}|-=-\frac{1}{|A|}$">$|A^{-1}| = \frac{1}{|A|}$</a></li>
+<li><a href="#$|A^2|=|A|^2$">$|A^2|=|A|^2$</a></li>
+<li><a href="#$|2A|=2^n-|A|$">$|2A|=2^n |A|$</a></li>
+<li><a href="#$|A^T|=|A|$">$|A^T|=|A|$</a></li>
+<li><a href="#$|U|=|A|$">$|U|=|A|$</a></li>
+<li><a href="#$|Q|=1$">$|Q|=1$</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Systems-of-difference-equations&gt;"><strong>Systems of difference equations</strong></a><ul>
-<li><a href="#&lt;Discrete-$u_{k}=A^{k}u_{0}$&gt;">Discrete $u_{k}=A^{k}u_{0}$</a><ul>
-<li><a href="#&lt;e.g.-Fibonacci&gt;">e.g. Fibonacci</a></li>
-<li><a href="#&lt;Convergence&gt;">Convergence</a><ul>
-<li><a href="#&lt;Stability&gt;">Stability</a></li>
-<li><a href="#&lt;Steady-State&gt;">Steady State</a></li>
-<li><a href="#&lt;Blow-Up&gt;">Blow Up</a></li>
+<li><a href="#Eigenvalues-and-eigenvectors"><strong>Eigenvalues and eigenvectors</strong></a><ul>
+<li><a href="#Product-of-eigenvalues">Product of eigenvalues</a></li>
+<li><a href="#Sum-of-eigenvalues">Sum of eigenvalues</a></li>
+<li><a href="#Adding-to-the-diagonal-adds-to-lambdas">Adding to the diagonal adds to lambdas</a></li>
+<li><a href="#Attributes-of-a-diagonal-matrix">Attributes of a diagonal matrix</a></li>
+<li><a href="#Rotation-matrix-often-has-complex-lambdas">Rotation matrix often has complex lambdas</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Analyze&gt;">Analyze</a><ul>
-<li><a href="#&lt;Graph&gt;">Graph</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#&lt;Continuous-$u(t">Continuous $u(t)=e^{At}u(0)$</a>=e^{At}u(0)$&gt;)<ul>
-<li><a href="#&lt;e.g.-A-2×2-system-of-diff-eqs&gt;">e.g. A 2×2 system of diff eqs</a></li>
-<li><a href="#&lt;e.g.-A-2nd-order-diff-eq&gt;">e.g. A 2nd order diff eq</a></li>
-<li><a href="#&lt;Convergence&gt;">Convergence</a><ul>
-<li><a href="#&lt;Stability&gt;">Stability</a></li>
-<li><a href="#&lt;Steady-State&gt;">Steady State</a></li>
-<li><a href="#&lt;Blow-Up&gt;">Blow Up</a></li>
-</ul>
-</li>
-<li><a href="#&lt;Analyze&gt;">Analyze</a><ul>
-<li><a href="#&lt;Graph&gt;">Graph</a></li>
+<li><a href="#Diagonalizability"><strong>Diagonalizability</strong></a><ul>
+<li><a href="#Algebraic-&amp;-Geometric-Multiplicity">Algebraic &amp; Geometric Multiplicity</a></li>
+<li><a href="#Defective-matrix">Defective matrix</a></li>
+<li><a href="#Diagonalizable-matrix">Diagonalizable matrix</a><ul>
+<li><a href="#Normal">Normal</a><ul>
+<li><a href="#Hermitian">Hermitian</a></li>
+<li><a href="#Unitary">Unitary</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#&lt;Markov-matrix&gt;"><strong>Markov matrix</strong></a><ul>
-<li><a href="#&lt;All-entries-are-0-or-positive&gt;">All entries are 0 or positive</a></li>
-<li><a href="#&lt;All-columns-add-to-1&gt;">All columns add to 1</a></li>
-<li><a href="#&lt;$\exists-i:-\lambda_{i}-=-1$&gt;">$\exists i: \lambda_{i} = 1$</a></li>
-<li><a href="#&lt;$\forall-j-\ne-i-,-|\lambda_{j}|-\leq-1$&gt;">$\forall j \ne i , |\lambda_{j}| \leq 1$</a></li>
-<li><a href="#&lt;It-converges-to-a-positive-steady-state&gt;">It converges to a positive steady state</a></li>
-<li><a href="#&lt;$A^{k}$-is-still-Markov&gt;">$A^{k}$ is still Markov</a></li>
+<li><a href="#Matrix-Power-$A^{k}$"><strong>Matrix Power $A^{k}$</strong></a><ul>
+<li><a href="#A-diagonal-matrix">A diagonal matrix</a></li>
+<li><a href="#Any-matrix">Any matrix</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Expansion-with-a-basis&gt;"><strong>Expansion with a basis</strong></a><ul>
-<li><a href="#&lt;With-A&gt;">With A</a></li>
-<li><a href="#&lt;With-Q-(orthonormal-basis">With Q (orthonormal basis)</a>&gt;)</li>
-<li><a href="#&lt;With-S-(eigenvectors">With S (eigenvectors)</a>&gt;)</li>
+<li><a href="#Matrix-Exponential-$e^{At}$"><strong>Matrix Exponential $e^{At}$</strong></a><ul>
+<li><a href="#A-diagonal-matrix">A diagonal matrix</a></li>
+<li><a href="#Any-matrix">Any matrix</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Complex-Vectors-and-Matrices&gt;"><strong>Complex Vectors and Matrices</strong></a><ul>
-<li><a href="#&lt;Hermitian-matrix&gt;">Hermitian matrix</a></li>
-<li><a href="#&lt;Unitary-matrix&gt;">Unitary matrix</a></li>
+<li><a href="#Systems-of-difference-equations"><strong>Systems of difference equations</strong></a><ul>
+<li><a href="#Discrete-$u_{k}=A^{k}u_{0}$">Discrete $u_{k}=A^{k}u_{0}$</a><ul>
+<li><a href="#e.g.-Fibonacci">e.g. Fibonacci</a></li>
+<li><a href="#Convergence">Convergence</a><ul>
+<li><a href="#Stability">Stability</a></li>
+<li><a href="#Steady-State">Steady State</a></li>
+<li><a href="#Blow-Up">Blow Up</a></li>
 </ul>
 </li>
-<li><a href="#&lt;Positive-Definite-Matrices&gt;"><strong>Positive Definite Matrices</strong></a></li>
+<li><a href="#Analyze">Analyze</a><ul>
+<li><a href="#Graph">Graph</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Continuous-$u(t)=e^{At}u(0)$">Continuous $u(t)=e^{At}u(0)$</a><ul>
+<li><a href="#e.g.-A-2×2-system-of-diff-eqs">e.g. A 2×2 system of diff eqs</a></li>
+<li><a href="#e.g.-A-2nd-order-diff-eq">e.g. A 2nd order diff eq</a></li>
+<li><a href="#Convergence">Convergence</a><ul>
+<li><a href="#Stability">Stability</a></li>
+<li><a href="#Steady-State">Steady State</a></li>
+<li><a href="#Blow-Up">Blow Up</a></li>
+</ul>
+</li>
+<li><a href="#Analyze">Analyze</a><ul>
+<li><a href="#Graph">Graph</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Markov-matrix"><strong>Markov matrix</strong></a><ul>
+<li><a href="#All-entries-are-0-or-positive">All entries are 0 or positive</a></li>
+<li><a href="#All-columns-add-to-1">All columns add to 1</a></li>
+<li><a href="#$\exists-i:-\lambda_{i}-=-1$">$\exists i: \lambda_{i} = 1$</a></li>
+<li><a href="#$\forall-j-\ne-i-,-|\lambda_{j}|-\leq-1$">$\forall j \ne i , |\lambda_{j}| \leq 1$</a></li>
+<li><a href="#It-converges-to-a-positive-steady-state">It converges to a positive steady state</a></li>
+<li><a href="#$A^{k}$-is-still-Markov">$A^{k}$ is still Markov</a></li>
+</ul>
+</li>
+<li><a href="#Expansion-with-a-basis"><strong>Expansion with a basis</strong></a><ul>
+<li><a href="#With-A">With A</a></li>
+<li><a href="#With-Q-(orthonormal-basis)">With Q (orthonormal basis)</a></li>
+<li><a href="#With-S-(eigenvectors)">With S (eigenvectors)</a></li>
+</ul>
+</li>
+<li><a href="#Complex-Vectors-and-Matrices"><strong>Complex Vectors and Matrices</strong></a><ul>
+<li><a href="#Hermitian-matrix">Hermitian matrix</a></li>
+<li><a href="#Unitary-matrix">Unitary matrix</a></li>
+</ul>
+</li>
+<li><a href="#Positive-Definite-Matrices"><strong>Positive Definite Matrices</strong></a></li>
 </ol>
 
 </div>
@@ -302,7 +310,8 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Requirements">Requirements<a class="anchor-link" href="#Requirements"> </a></h2>
+<p>Requirements</p>
+
 </div>
 </div>
 </div>
@@ -373,12 +382,6 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="#Contents">&#x21e7;</a></p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-my-chosen-array">Create my chosen array<a class="anchor-link" href="#Create-my-chosen-array"> </a></h1>
 </div>
 </div>
 </div>
